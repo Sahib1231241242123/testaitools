@@ -1,0 +1,34 @@
+{
+  "name": "retailcrm-orders-dashboard",
+  "version": "1.0.0",
+  "description": "Mini dashboard for RetailCRM orders synced to Supabase with Telegram alerts",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "import:mock": "tsx scripts/import-mock-orders.ts",
+    "sync:orders": "tsx scripts/sync-retailcrm-to-supabase.ts",
+    "watch:high-value": "tsx scripts/watch-high-value-orders.ts"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "chart.js": "^4.4.4",
+    "dotenv": "^16.4.5",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
